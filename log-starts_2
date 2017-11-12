@@ -1,0 +1,3179 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.jackrabbit:oak-parent:pom:1.8-SNAPSHOT
+[WARNING] 'reporting.plugins.plugin.version' for org.apache.maven.plugins:maven-project-info-reports-plugin is missing. @ line 507, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.jackrabbit:oak-auth-ldap:bundle:1.8-SNAPSHOT
+[WARNING] 'dependencies.dependency.exclusions.exclusion.artifactId' for org.apache.directory.server:apacheds-core:jar with value '*' does not match a valid id pattern. @ line 253, column 33
+[WARNING] 'dependencies.dependency.exclusions.exclusion.artifactId' for org.apache.directory.server:apacheds-core-annotations:jar with value '*' does not match a valid id pattern. @ line 265, column 33
+[WARNING] 'dependencies.dependency.exclusions.exclusion.artifactId' for org.apache.directory.server:apacheds-core-api:jar with value '*' does not match a valid id pattern. @ line 277, column 33
+[WARNING] 'dependencies.dependency.exclusions.exclusion.artifactId' for org.apache.directory.server:apacheds-ldif-partition:jar with value '*' does not match a valid id pattern. @ line 319, column 33
+[WARNING] 'dependencies.dependency.exclusions.exclusion.artifactId' for org.apache.directory.server:apacheds-protocol-ldap:jar with value '*' does not match a valid id pattern. @ line 349, column 33
+[WARNING] 'dependencies.dependency.exclusions.exclusion.artifactId' for org.apache.directory.server:apacheds-server-config:jar with value '*' does not match a valid id pattern. @ line 379, column 33
+[WARNING] 'dependencies.dependency.exclusions.exclusion.artifactId' for org.apache.directory.server:apacheds-server-jndi:jar with value '*' does not match a valid id pattern. @ line 391, column 33
+[WARNING] 'dependencies.dependency.exclusions.exclusion.artifactId' for org.apache.directory.server:apacheds-xdbm-partition:jar with value '*' does not match a valid id pattern. @ line 403, column 33
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.jackrabbit:jackrabbit-oak:pom:1.8-SNAPSHOT
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.ekstazi:ekstazi-maven-plugin @ line 92, column 9
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Oak Parent POM
+[INFO] Oak Commons
+[INFO] Oak API
+[INFO] Oak Core SPI
+[INFO] Oak NodeStore and Commit SPI
+[INFO] Oak Query SPI
+[INFO] Oak Security SPI
+[INFO] Oak Blob Store
+[INFO] Oak Blob Plugins
+[INFO] Oak Core
+[INFO] Oak Composite Store
+[INFO] Oak DocumentNodeStore
+[INFO] Oak Cloud Blob Store
+[INFO] Oak Azure Cloud Blob Store
+[INFO] Oak Segment Tar
+[INFO] Oak Integration Tests
+[INFO] Oak JCR Binding
+[INFO] Oak upgrade
+[INFO] Oak HTTP Binding
+[INFO] Oak Lucene
+[INFO] Oak Solr core
+[INFO] Oak Solr OSGi
+[INFO] Oak Search Machine Translation
+[INFO] Oak External Authentication Support
+[INFO] Oak LDAP Authentication Support
+[INFO] Oak Commons for Runnable modules
+[INFO] Oak Remote API
+[INFO] Oak Runnable Jar
+[INFO] Oak Integration Tests for OSGi deployments
+[INFO] Oak PojoSR
+[INFO] Oak CUG Authorization
+[INFO] Oak Exercises
+[INFO] Oak Web Application Example
+[INFO] Oak Standalone Example
+[INFO] Oak Examples
+[INFO] Oak Benchmarks Runner
+[INFO] Jackrabbit Oak
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Parent POM 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-parent >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-parent ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-parent ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-parent ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-parent ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-parent >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-parent ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-parent ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-parent ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-parent <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-parent ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Commons 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-commons >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-commons ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-commons ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-commons/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-commons ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-commons ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-commons ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-commons >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-commons ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-commons ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-commons/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-commons ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-commons ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-commons <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-commons ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 18
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-commons ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-commons ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-commons <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-commons ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak API 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-api >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-api ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-api ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-api/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-api ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-api >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-api ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-api ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-api/src/test/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-api <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-api ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 2
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-api ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-api ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-api <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-api ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Core SPI 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-core-spi >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-core-spi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-core-spi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-core-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-core-spi/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-core-spi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-core-spi ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-core-spi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-core-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-core-spi/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-core-spi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-core-spi ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-core-spi >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-core-spi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-core-spi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-core-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-core-spi/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-core-spi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-core-spi ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-core-spi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-core-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-core-spi/src/test/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-core-spi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-core-spi <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-core-spi ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 20
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-core-spi ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-core-spi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-core-spi <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-core-spi ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak NodeStore and Commit SPI 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-store-spi >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-store-spi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-store-spi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-store-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-store-spi/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-store-spi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-store-spi ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-store-spi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-store-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-store-spi/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-store-spi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-store-spi ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-store-spi >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-store-spi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-store-spi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-store-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-store-spi/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-store-spi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-store-spi ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-store-spi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-store-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-store-spi/src/test/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-store-spi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-store-spi <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-store-spi ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 17
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-store-spi ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-store-spi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-store-spi <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-store-spi ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Query SPI 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-query-spi >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-query-spi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-query-spi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-query-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-query-spi/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-query-spi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-query-spi ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-query-spi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-query-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-query-spi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-query-spi ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-query-spi >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-query-spi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-query-spi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-query-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-query-spi/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-query-spi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-query-spi ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-query-spi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-query-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-query-spi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-query-spi <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-query-spi ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 1
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-query-spi ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-query-spi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-query-spi <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-query-spi ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Security SPI 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-security-spi >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-security-spi ---
+[INFO] test.opts.coverage set to -javaagent:/home/kwang62/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/home/kwang62/jackrabbit-oak/oak-security-spi/target/coverage-reports/jacoco-ut.exec
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-security-spi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-security-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-security-spi/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-security-spi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-security-spi ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-security-spi ---
+[WARNING] Manifest org.apache.jackrabbit:oak-security-spi:bundle:1.8-SNAPSHOT : aQute.bnd.annotation.ProviderType annotation used in class org.apache.jackrabbit.api.security.JackrabbitAccessControlEntry. Bnd versioning annotations are deprecated as of Bnd 3.2 and support will be removed in Bnd 4.0. Please change to use OSGi versioning annotations.
+[WARNING] Manifest org.apache.jackrabbit:oak-security-spi:bundle:1.8-SNAPSHOT : aQute.bnd.annotation.ProviderType annotation used in class org.apache.jackrabbit.api.security.JackrabbitAccessControlList. Bnd versioning annotations are deprecated as of Bnd 3.2 and support will be removed in Bnd 4.0. Please change to use OSGi versioning annotations.
+[WARNING] Manifest org.apache.jackrabbit:oak-security-spi:bundle:1.8-SNAPSHOT : aQute.bnd.annotation.ProviderType annotation used in class org.apache.jackrabbit.api.security.JackrabbitAccessControlManager. Bnd versioning annotations are deprecated as of Bnd 3.2 and support will be removed in Bnd 4.0. Please change to use OSGi versioning annotations.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-security-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-security-spi/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-security-spi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-security-spi ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-security-spi >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-security-spi ---
+[INFO] test.opts.coverage set to -javaagent:/home/kwang62/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/home/kwang62/jackrabbit-oak/oak-security-spi/target/coverage-reports/jacoco-ut.exec
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-security-spi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-security-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-security-spi/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-security-spi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-security-spi ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-security-spi ---
+[WARNING] Manifest org.apache.jackrabbit:oak-security-spi:bundle:1.8-SNAPSHOT : aQute.bnd.annotation.ProviderType annotation used in class org.apache.jackrabbit.api.security.JackrabbitAccessControlEntry. Bnd versioning annotations are deprecated as of Bnd 3.2 and support will be removed in Bnd 4.0. Please change to use OSGi versioning annotations.
+[WARNING] Manifest org.apache.jackrabbit:oak-security-spi:bundle:1.8-SNAPSHOT : aQute.bnd.annotation.ProviderType annotation used in class org.apache.jackrabbit.api.security.JackrabbitAccessControlList. Bnd versioning annotations are deprecated as of Bnd 3.2 and support will be removed in Bnd 4.0. Please change to use OSGi versioning annotations.
+[WARNING] Manifest org.apache.jackrabbit:oak-security-spi:bundle:1.8-SNAPSHOT : aQute.bnd.annotation.ProviderType annotation used in class org.apache.jackrabbit.api.security.JackrabbitAccessControlManager. Bnd versioning annotations are deprecated as of Bnd 3.2 and support will be removed in Bnd 4.0. Please change to use OSGi versioning annotations.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-security-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-security-spi/src/test/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-security-spi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-security-spi <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-security-spi ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 69
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-security-spi ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-security-spi ---
+[INFO] Loading execution data file /home/kwang62/jackrabbit-oak/oak-security-spi/target/coverage-reports/jacoco-ut.exec
+[INFO] Analyzed bundle 'Oak Security SPI' with 128 classes
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-security-spi <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-security-spi ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Blob Store 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-blob >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-blob ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-blob ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-blob ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-blob/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-blob ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-blob ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-blob ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-blob ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-blob ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-blob ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-blob >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-blob ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-blob ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-blob ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-blob/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-blob ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-blob ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-blob ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-blob ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-blob ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-blob <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-blob ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 6
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-blob ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-blob ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-blob <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-blob ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Blob Plugins 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-blob-plugins >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-blob-plugins ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-blob-plugins ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-blob-plugins ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-blob-plugins ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-blob-plugins ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-blob-plugins ---
+[WARNING] Manifest org.apache.jackrabbit:oak-blob-plugins:bundle:1.8-SNAPSHOT :  Component org.apache.jackrabbit.oak.plugins.blob.datastore.DbDataStore is using the deprecated inheritance feature and inherits from org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreService. This feature will be removed in future versions. [org/apache/jackrabbit/oak/plugins/blob/datastore/DbDataStoreService.class,1:1]
+[WARNING] Manifest org.apache.jackrabbit:oak-blob-plugins:bundle:1.8-SNAPSHOT :  Component org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore is using the deprecated inheritance feature and inherits from org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreService. This feature will be removed in future versions. [org/apache/jackrabbit/oak/plugins/blob/datastore/FileDataStoreService.class,1:1]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-blob-plugins ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-blob-plugins ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-blob-plugins ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-blob-plugins >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-blob-plugins ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-blob-plugins ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-blob-plugins ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-blob-plugins ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-blob-plugins ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-blob-plugins ---
+[WARNING] Manifest org.apache.jackrabbit:oak-blob-plugins:bundle:1.8-SNAPSHOT :  Component org.apache.jackrabbit.oak.plugins.blob.datastore.DbDataStore is using the deprecated inheritance feature and inherits from org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreService. This feature will be removed in future versions. [org/apache/jackrabbit/oak/plugins/blob/datastore/DbDataStoreService.class,1:1]
+[WARNING] Manifest org.apache.jackrabbit:oak-blob-plugins:bundle:1.8-SNAPSHOT :  Component org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore is using the deprecated inheritance feature and inherits from org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreService. This feature will be removed in future versions. [org/apache/jackrabbit/oak/plugins/blob/datastore/FileDataStoreService.class,1:1]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-blob-plugins ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-blob-plugins ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-blob-plugins <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-blob-plugins ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 26
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-blob-plugins ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-blob-plugins ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-blob-plugins <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-blob-plugins ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Core 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-core >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-core ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 462 source files to /home/kwang62/jackrabbit-oak/oak-core/target/classes
+[INFO] /home/kwang62/jackrabbit-oak/oak-core/src/main/java/org/apache/jackrabbit/oak/plugins/commit/ChildOrderConflictHandler.java: Some input files use or override a deprecated API.
+[INFO] /home/kwang62/jackrabbit-oak/oak-core/src/main/java/org/apache/jackrabbit/oak/plugins/commit/ChildOrderConflictHandler.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/kwang62/jackrabbit-oak/oak-core/src/main/java/org/apache/jackrabbit/oak/security/user/AuthorizableImpl.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/kwang62/jackrabbit-oak/oak-core/src/main/java/org/apache/jackrabbit/oak/security/user/AuthorizableImpl.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-core ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-core ---
+[WARNING] Manifest org.apache.jackrabbit:oak-core:bundle:1.8-SNAPSHOT : aQute.bnd.annotation.ProviderType annotation used in class org.apache.jackrabbit.api.security.user.UserManager. Bnd versioning annotations are deprecated as of Bnd 3.2 and support will be removed in Bnd 4.0. Please change to use OSGi versioning annotations.
+[WARNING] Manifest org.apache.jackrabbit:oak-core:bundle:1.8-SNAPSHOT : Export org.apache.jackrabbit.oak.plugins.index,  has 1,  private references [org.apache.jackrabbit.oak.plugins.index.progress], 
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 17 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-core ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-core >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-core ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 462 source files to /home/kwang62/jackrabbit-oak/oak-core/target/classes
+[INFO] /home/kwang62/jackrabbit-oak/oak-core/src/main/java/org/apache/jackrabbit/oak/plugins/commit/ChildOrderConflictHandler.java: Some input files use or override a deprecated API.
+[INFO] /home/kwang62/jackrabbit-oak/oak-core/src/main/java/org/apache/jackrabbit/oak/plugins/commit/ChildOrderConflictHandler.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/kwang62/jackrabbit-oak/oak-core/src/main/java/org/apache/jackrabbit/oak/security/user/AuthorizableImpl.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/kwang62/jackrabbit-oak/oak-core/src/main/java/org/apache/jackrabbit/oak/security/user/AuthorizableImpl.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-core ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-core ---
+[WARNING] Manifest org.apache.jackrabbit:oak-core:bundle:1.8-SNAPSHOT : aQute.bnd.annotation.ProviderType annotation used in class org.apache.jackrabbit.api.security.user.UserManager. Bnd versioning annotations are deprecated as of Bnd 3.2 and support will be removed in Bnd 4.0. Please change to use OSGi versioning annotations.
+[WARNING] Manifest org.apache.jackrabbit:oak-core:bundle:1.8-SNAPSHOT : Export org.apache.jackrabbit.oak.plugins.index,  has 1,  private references [org.apache.jackrabbit.oak.plugins.index.progress], 
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 17 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-core <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-core ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 303
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-core ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-core ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-core <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-core ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Composite Store 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-store-composite >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-store-composite ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-store-composite ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-store-composite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-store-composite/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-store-composite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-store-composite ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-store-composite ---
+[WARNING] Manifest org.apache.jackrabbit:oak-store-composite:bundle:1.8-SNAPSHOT :  Component org.apache.jackrabbit.oak.composite.CrossMountReferenceValidatorProvider has set a label. However metatype is set to false. This label is ignored. [org/apache/jackrabbit/oak/composite/CrossMountReferenceValidatorProvider.class,1:1]
+[WARNING] Manifest org.apache.jackrabbit:oak-store-composite:bundle:1.8-SNAPSHOT : Property type in class org.apache.jackrabbit.oak.composite.CrossMountReferenceValidatorProvider is set as private. This is redundant as no metatype will be generated. [org/apache/jackrabbit/oak/composite/CrossMountReferenceValidatorProvider.class,1:1]
+[WARNING] Manifest org.apache.jackrabbit:oak-store-composite:bundle:1.8-SNAPSHOT :  Component org.apache.jackrabbit.oak.composite.MountInfoProviderService has set a label. However metatype is set to false. This label is ignored. [org/apache/jackrabbit/oak/composite/MountInfoProviderService.class,1:1]
+[WARNING] Manifest org.apache.jackrabbit:oak-store-composite:bundle:1.8-SNAPSHOT :  Component org.apache.jackrabbit.oak.composite.PrivateStoreValidatorProvider has set a label. However metatype is set to false. This label is ignored. [org/apache/jackrabbit/oak/composite/PrivateStoreValidatorProvider.class,1:1]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-store-composite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-store-composite/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-store-composite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-store-composite ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-store-composite >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-store-composite ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-store-composite ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-store-composite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-store-composite/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-store-composite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-store-composite ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-store-composite ---
+[WARNING] Manifest org.apache.jackrabbit:oak-store-composite:bundle:1.8-SNAPSHOT :  Component org.apache.jackrabbit.oak.composite.CrossMountReferenceValidatorProvider has set a label. However metatype is set to false. This label is ignored. [org/apache/jackrabbit/oak/composite/CrossMountReferenceValidatorProvider.class,1:1]
+[WARNING] Manifest org.apache.jackrabbit:oak-store-composite:bundle:1.8-SNAPSHOT : Property type in class org.apache.jackrabbit.oak.composite.CrossMountReferenceValidatorProvider is set as private. This is redundant as no metatype will be generated. [org/apache/jackrabbit/oak/composite/CrossMountReferenceValidatorProvider.class,1:1]
+[WARNING] Manifest org.apache.jackrabbit:oak-store-composite:bundle:1.8-SNAPSHOT :  Component org.apache.jackrabbit.oak.composite.MountInfoProviderService has set a label. However metatype is set to false. This label is ignored. [org/apache/jackrabbit/oak/composite/MountInfoProviderService.class,1:1]
+[WARNING] Manifest org.apache.jackrabbit:oak-store-composite:bundle:1.8-SNAPSHOT :  Component org.apache.jackrabbit.oak.composite.PrivateStoreValidatorProvider has set a label. However metatype is set to false. This label is ignored. [org/apache/jackrabbit/oak/composite/PrivateStoreValidatorProvider.class,1:1]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-store-composite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-store-composite/src/test/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-store-composite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-store-composite <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-store-composite ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 14
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-store-composite ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-store-composite ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-store-composite <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-store-composite ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak DocumentNodeStore 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-store-document >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-store-document ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-store-document ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-store-document ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-store-document ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 197 source files to /home/kwang62/jackrabbit-oak/oak-store-document/target/classes
+[INFO] /home/kwang62/jackrabbit-oak/oak-store-document/src/main/java/org/apache/jackrabbit/oak/plugins/document/util/MongoConnection.java: Some input files use or override a deprecated API.
+[INFO] /home/kwang62/jackrabbit-oak/oak-store-document/src/main/java/org/apache/jackrabbit/oak/plugins/document/util/MongoConnection.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/kwang62/jackrabbit-oak/oak-store-document/src/main/java/org/apache/jackrabbit/oak/plugins/document/UpdateUtils.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/kwang62/jackrabbit-oak/oak-store-document/src/main/java/org/apache/jackrabbit/oak/plugins/document/UpdateUtils.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-store-document ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-store-document ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-store-document ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-store-document ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-store-document ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-store-document >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-store-document ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-store-document ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-store-document ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-store-document ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 197 source files to /home/kwang62/jackrabbit-oak/oak-store-document/target/classes
+[INFO] /home/kwang62/jackrabbit-oak/oak-store-document/src/main/java/org/apache/jackrabbit/oak/plugins/document/util/MongoConnection.java: Some input files use or override a deprecated API.
+[INFO] /home/kwang62/jackrabbit-oak/oak-store-document/src/main/java/org/apache/jackrabbit/oak/plugins/document/util/MongoConnection.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/kwang62/jackrabbit-oak/oak-store-document/src/main/java/org/apache/jackrabbit/oak/plugins/document/UpdateUtils.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/kwang62/jackrabbit-oak/oak-store-document/src/main/java/org/apache/jackrabbit/oak/plugins/document/UpdateUtils.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-store-document ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-store-document ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-store-document ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-store-document ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-store-document <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-store-document ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 211
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-store-document ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-store-document ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-store-document <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-store-document ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Cloud Blob Store 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-blob-cloud >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-blob-cloud ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-blob-cloud ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-blob-cloud ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-blob-cloud/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-blob-cloud ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-blob-cloud ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-blob-cloud ---
+[WARNING] Manifest org.apache.jackrabbit:oak-blob-cloud:bundle:1.8-SNAPSHOT :  Component org.apache.jackrabbit.oak.blob.cloud.s3.AbstractS3DataStoreService is using the deprecated inheritance feature and inherits from org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreService. This feature will be removed in future versions. [org/apache/jackrabbit/oak/blob/cloud/s3/AbstractS3DataStoreService.class,1:1]
+[WARNING] Manifest org.apache.jackrabbit:oak-blob-cloud:bundle:1.8-SNAPSHOT :  Component org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore is using the deprecated inheritance feature and inherits from org.apache.jackrabbit.oak.blob.cloud.s3.AbstractS3DataStoreService. This feature will be removed in future versions. [org/apache/jackrabbit/oak/blob/cloud/s3/S3DataStoreService.class,1:1]
+[WARNING] Manifest org.apache.jackrabbit:oak-blob-cloud:bundle:1.8-SNAPSHOT :  Component org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore is using the deprecated inheritance feature and inherits from org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreService. This feature will be removed in future versions. [org/apache/jackrabbit/oak/blob/cloud/s3/S3DataStoreService.class,1:1]
+[WARNING] Manifest org.apache.jackrabbit:oak-blob-cloud:bundle:1.8-SNAPSHOT :  Component org.apache.jackrabbit.oak.plugins.blob.datastore.SharedS3DataStore is using the deprecated inheritance feature and inherits from org.apache.jackrabbit.oak.blob.cloud.s3.AbstractS3DataStoreService. This feature will be removed in future versions. [org/apache/jackrabbit/oak/blob/cloud/s3/SharedS3DataStoreService.class,1:1]
+[WARNING] Manifest org.apache.jackrabbit:oak-blob-cloud:bundle:1.8-SNAPSHOT :  Component org.apache.jackrabbit.oak.plugins.blob.datastore.SharedS3DataStore is using the deprecated inheritance feature and inherits from org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreService. This feature will be removed in future versions. [org/apache/jackrabbit/oak/blob/cloud/s3/SharedS3DataStoreService.class,1:1]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-blob-cloud ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-blob-cloud ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-blob-cloud ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-blob-cloud >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-blob-cloud ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-blob-cloud ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-blob-cloud ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-blob-cloud/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-blob-cloud ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-blob-cloud ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-blob-cloud ---
+[WARNING] Manifest org.apache.jackrabbit:oak-blob-cloud:bundle:1.8-SNAPSHOT :  Component org.apache.jackrabbit.oak.blob.cloud.s3.AbstractS3DataStoreService is using the deprecated inheritance feature and inherits from org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreService. This feature will be removed in future versions. [org/apache/jackrabbit/oak/blob/cloud/s3/AbstractS3DataStoreService.class,1:1]
+[WARNING] Manifest org.apache.jackrabbit:oak-blob-cloud:bundle:1.8-SNAPSHOT :  Component org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore is using the deprecated inheritance feature and inherits from org.apache.jackrabbit.oak.blob.cloud.s3.AbstractS3DataStoreService. This feature will be removed in future versions. [org/apache/jackrabbit/oak/blob/cloud/s3/S3DataStoreService.class,1:1]
+[WARNING] Manifest org.apache.jackrabbit:oak-blob-cloud:bundle:1.8-SNAPSHOT :  Component org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore is using the deprecated inheritance feature and inherits from org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreService. This feature will be removed in future versions. [org/apache/jackrabbit/oak/blob/cloud/s3/S3DataStoreService.class,1:1]
+[WARNING] Manifest org.apache.jackrabbit:oak-blob-cloud:bundle:1.8-SNAPSHOT :  Component org.apache.jackrabbit.oak.plugins.blob.datastore.SharedS3DataStore is using the deprecated inheritance feature and inherits from org.apache.jackrabbit.oak.blob.cloud.s3.AbstractS3DataStoreService. This feature will be removed in future versions. [org/apache/jackrabbit/oak/blob/cloud/s3/SharedS3DataStoreService.class,1:1]
+[WARNING] Manifest org.apache.jackrabbit:oak-blob-cloud:bundle:1.8-SNAPSHOT :  Component org.apache.jackrabbit.oak.plugins.blob.datastore.SharedS3DataStore is using the deprecated inheritance feature and inherits from org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreService. This feature will be removed in future versions. [org/apache/jackrabbit/oak/blob/cloud/s3/SharedS3DataStoreService.class,1:1]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-blob-cloud ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-blob-cloud ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-blob-cloud <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-blob-cloud ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 6
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-blob-cloud ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-blob-cloud ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-blob-cloud <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-blob-cloud ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Azure Cloud Blob Store 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-blob-cloud-azure >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-blob-cloud-azure ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-blob-cloud-azure ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-blob-cloud-azure ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-blob-cloud-azure/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-blob-cloud-azure ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-blob-cloud-azure ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-blob-cloud-azure ---
+[WARNING] Manifest org.apache.jackrabbit:oak-blob-cloud-azure:bundle:1.8-SNAPSHOT :  Component org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore is using the deprecated inheritance feature and inherits from org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreService. This feature will be removed in future versions. [org/apache/jackrabbit/oak/blob/cloud/azure/blobstorage/AzureDataStoreService.class,1:1]
+[WARNING] Manifest org.apache.jackrabbit:oak-blob-cloud-azure:bundle:1.8-SNAPSHOT : Export org.apache.jackrabbit.oak.blob.cloud.azure.blobstorage,  has 2,  private references [com.microsoft.azure.storage.blob, com.microsoft.azure.storage], 
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-blob-cloud-azure ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-blob-cloud-azure ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-blob-cloud-azure ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-blob-cloud-azure >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-blob-cloud-azure ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-blob-cloud-azure ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-blob-cloud-azure ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-blob-cloud-azure/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-blob-cloud-azure ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-blob-cloud-azure ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-blob-cloud-azure ---
+[WARNING] Manifest org.apache.jackrabbit:oak-blob-cloud-azure:bundle:1.8-SNAPSHOT :  Component org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore is using the deprecated inheritance feature and inherits from org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreService. This feature will be removed in future versions. [org/apache/jackrabbit/oak/blob/cloud/azure/blobstorage/AzureDataStoreService.class,1:1]
+[WARNING] Manifest org.apache.jackrabbit:oak-blob-cloud-azure:bundle:1.8-SNAPSHOT : Export org.apache.jackrabbit.oak.blob.cloud.azure.blobstorage,  has 2,  private references [com.microsoft.azure.storage.blob, com.microsoft.azure.storage], 
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-blob-cloud-azure ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-blob-cloud-azure ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-blob-cloud-azure <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-blob-cloud-azure ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 5
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-blob-cloud-azure ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-blob-cloud-azure ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-blob-cloud-azure <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-blob-cloud-azure ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Segment Tar 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-segment-tar >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-segment-tar ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-segment-tar ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-segment-tar ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-segment-tar ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-segment-tar ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-segment-tar ---
+[WARNING] Manifest org.apache.jackrabbit:oak-segment-tar:bundle:1.8-SNAPSHOT : NoClassDefFoundError: org/jboss/marshalling/ByteInput
+[WARNING] Manifest org.apache.jackrabbit:oak-segment-tar:bundle:1.8-SNAPSHOT : NoClassDefFoundError: org/jboss/marshalling/ByteOutput
+[WARNING] Manifest org.apache.jackrabbit:oak-segment-tar:bundle:1.8-SNAPSHOT : NoClassDefFoundError: org/conscrypt/HandshakeListener
+[WARNING] Manifest org.apache.jackrabbit:oak-segment-tar:bundle:1.8-SNAPSHOT : NoClassDefFoundError: org/eclipse/jetty/alpn/ALPN$ClientProvider
+[WARNING] Manifest org.apache.jackrabbit:oak-segment-tar:bundle:1.8-SNAPSHOT : NoClassDefFoundError: org/eclipse/jetty/alpn/ALPN$ServerProvider
+[WARNING] Manifest org.apache.jackrabbit:oak-segment-tar:bundle:1.8-SNAPSHOT : NoClassDefFoundError: org/eclipse/jetty/npn/NextProtoNego$ServerProvider
+[WARNING] Manifest org.apache.jackrabbit:oak-segment-tar:bundle:1.8-SNAPSHOT : NoClassDefFoundError: org/eclipse/jetty/npn/NextProtoNego$ClientProvider
+[WARNING] Manifest org.apache.jackrabbit:oak-segment-tar:bundle:1.8-SNAPSHOT : NoClassDefFoundError: io/netty/internal/tcnative/CertificateRequestedCallback
+[WARNING] Manifest org.apache.jackrabbit:oak-segment-tar:bundle:1.8-SNAPSHOT : NoClassDefFoundError: io/netty/internal/tcnative/CertificateVerifier
+[WARNING] Manifest org.apache.jackrabbit:oak-segment-tar:bundle:1.8-SNAPSHOT : NoClassDefFoundError: io/netty/internal/tcnative/SniHostNameMatcher
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-segment-tar ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-segment-tar ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-segment-tar ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-segment-tar >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-segment-tar ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-segment-tar ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-segment-tar ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-segment-tar ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-segment-tar ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-segment-tar ---
+[WARNING] Manifest org.apache.jackrabbit:oak-segment-tar:bundle:1.8-SNAPSHOT : NoClassDefFoundError: org/jboss/marshalling/ByteInput
+[WARNING] Manifest org.apache.jackrabbit:oak-segment-tar:bundle:1.8-SNAPSHOT : NoClassDefFoundError: org/jboss/marshalling/ByteOutput
+[WARNING] Manifest org.apache.jackrabbit:oak-segment-tar:bundle:1.8-SNAPSHOT : NoClassDefFoundError: org/conscrypt/HandshakeListener
+[WARNING] Manifest org.apache.jackrabbit:oak-segment-tar:bundle:1.8-SNAPSHOT : NoClassDefFoundError: org/eclipse/jetty/alpn/ALPN$ClientProvider
+[WARNING] Manifest org.apache.jackrabbit:oak-segment-tar:bundle:1.8-SNAPSHOT : NoClassDefFoundError: org/eclipse/jetty/alpn/ALPN$ServerProvider
+[WARNING] Manifest org.apache.jackrabbit:oak-segment-tar:bundle:1.8-SNAPSHOT : NoClassDefFoundError: org/eclipse/jetty/npn/NextProtoNego$ServerProvider
+[WARNING] Manifest org.apache.jackrabbit:oak-segment-tar:bundle:1.8-SNAPSHOT : NoClassDefFoundError: org/eclipse/jetty/npn/NextProtoNego$ClientProvider
+[WARNING] Manifest org.apache.jackrabbit:oak-segment-tar:bundle:1.8-SNAPSHOT : NoClassDefFoundError: io/netty/internal/tcnative/CertificateRequestedCallback
+[WARNING] Manifest org.apache.jackrabbit:oak-segment-tar:bundle:1.8-SNAPSHOT : NoClassDefFoundError: io/netty/internal/tcnative/CertificateVerifier
+[WARNING] Manifest org.apache.jackrabbit:oak-segment-tar:bundle:1.8-SNAPSHOT : NoClassDefFoundError: io/netty/internal/tcnative/SniHostNameMatcher
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-segment-tar ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-segment-tar ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-segment-tar <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-segment-tar ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 93
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-segment-tar ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-segment-tar ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-segment-tar <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-segment-tar ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Integration Tests 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-it >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-it ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-it ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-it ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-it/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-it ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-it ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-it ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-it ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-it ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-it >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-it ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-it ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-it ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-it/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-it ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-it ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-it ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-it ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-it <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-it ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 35
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-it ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-it ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-it <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-it ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak JCR Binding 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-jcr >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-jcr ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-jcr ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-jcr ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-jcr ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 108 source files to /home/kwang62/jackrabbit-oak/oak-jcr/target/classes
+[INFO] /home/kwang62/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/Jcr.java: Some input files use or override a deprecated API.
+[INFO] /home/kwang62/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/Jcr.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-jcr ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-jcr ---
+[WARNING] Manifest org.apache.jackrabbit:oak-jcr:bundle:1.8-SNAPSHOT : aQute.bnd.annotation.ProviderType annotation used in class org.apache.jackrabbit.api.security.JackrabbitAccessControlManager. Bnd versioning annotations are deprecated as of Bnd 3.2 and support will be removed in Bnd 4.0. Please change to use OSGi versioning annotations.
+[WARNING] Manifest org.apache.jackrabbit:oak-jcr:bundle:1.8-SNAPSHOT : aQute.bnd.annotation.ProviderType annotation used in class org.apache.jackrabbit.api.security.user.UserManager. Bnd versioning annotations are deprecated as of Bnd 3.2 and support will be removed in Bnd 4.0. Please change to use OSGi versioning annotations.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-jcr ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-jcr ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-jcr ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-jcr >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-jcr ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-jcr ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-jcr ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-jcr ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 108 source files to /home/kwang62/jackrabbit-oak/oak-jcr/target/classes
+[INFO] /home/kwang62/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/Jcr.java: Some input files use or override a deprecated API.
+[INFO] /home/kwang62/jackrabbit-oak/oak-jcr/src/main/java/org/apache/jackrabbit/oak/jcr/Jcr.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-jcr ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-jcr ---
+[WARNING] Manifest org.apache.jackrabbit:oak-jcr:bundle:1.8-SNAPSHOT : aQute.bnd.annotation.ProviderType annotation used in class org.apache.jackrabbit.api.security.JackrabbitAccessControlManager. Bnd versioning annotations are deprecated as of Bnd 3.2 and support will be removed in Bnd 4.0. Please change to use OSGi versioning annotations.
+[WARNING] Manifest org.apache.jackrabbit:oak-jcr:bundle:1.8-SNAPSHOT : aQute.bnd.annotation.ProviderType annotation used in class org.apache.jackrabbit.api.security.user.UserManager. Bnd versioning annotations are deprecated as of Bnd 3.2 and support will be removed in Bnd 4.0. Please change to use OSGi versioning annotations.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-jcr ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-jcr ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-jcr <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-jcr ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 150
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-jcr ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-jcr ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-jcr <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-jcr ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak upgrade 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-upgrade >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-upgrade ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-upgrade ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-upgrade ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-upgrade ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-upgrade ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-upgrade ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-upgrade ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-upgrade ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-upgrade >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-upgrade ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-upgrade ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-upgrade ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-upgrade ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-upgrade ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-upgrade ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-upgrade ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-upgrade <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-upgrade ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 48
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-upgrade ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-upgrade ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-upgrade <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-upgrade ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak HTTP Binding 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-http >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-http ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-http ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-http/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-http ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-http ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-http ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-http/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-http ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-http ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-http >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-http ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-http ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-http/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-http ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-http ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-http ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-http/src/test/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-http ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-http <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-http ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 1
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-http ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-http ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-http <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-http ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Lucene 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-lucene >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-lucene ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-lucene ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-lucene ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-lucene ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-lucene ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-lucene ---
+[WARNING] Manifest org.apache.jackrabbit:oak-lucene:bundle:1.8-SNAPSHOT : Export org.apache.jackrabbit.oak.plugins.index.lucene,  has 7,  private references [org.apache.jackrabbit.oak.plugins.index.lucene.reader, org.apache.jackrabbit.oak.plugins.index.lucene.property, org.apache.jackrabbit.oak.plugins.index.lucene.hybrid, org.apache.jackrabbit.oak.plugins.index.lucene.directory, org.apache.jackrabbit.oak.plugins.index.lucene.binary, org.apache.jackrabbit.oak.cache, org.apache.jackrabbit.oak.plugins.index.lucene.writer], 
+[WARNING] Manifest org.apache.jackrabbit:oak-lucene:bundle:1.8-SNAPSHOT : Export org.apache.lucene.analysis.snowball,  has 1,  private references [org.tartarus.snowball], 
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-lucene ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-lucene ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-lucene ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-lucene >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-lucene ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-lucene ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-lucene ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-lucene ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-lucene ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-lucene ---
+[WARNING] Manifest org.apache.jackrabbit:oak-lucene:bundle:1.8-SNAPSHOT : Export org.apache.jackrabbit.oak.plugins.index.lucene,  has 7,  private references [org.apache.jackrabbit.oak.plugins.index.lucene.hybrid, org.apache.jackrabbit.oak.plugins.index.lucene.property, org.apache.jackrabbit.oak.plugins.index.lucene.binary, org.apache.jackrabbit.oak.plugins.index.lucene.directory, org.apache.jackrabbit.oak.cache, org.apache.jackrabbit.oak.plugins.index.lucene.writer, org.apache.jackrabbit.oak.plugins.index.lucene.reader], 
+[WARNING] Manifest org.apache.jackrabbit:oak-lucene:bundle:1.8-SNAPSHOT : Export org.apache.lucene.analysis.snowball,  has 1,  private references [org.tartarus.snowball], 
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-lucene ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-lucene ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-lucene <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-lucene ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 93
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-lucene ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-lucene ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-lucene <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-lucene ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Solr core 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-solr-core >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-solr-core ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-solr-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-solr-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-solr-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-solr-core ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-solr-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-solr-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-solr-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-solr-core ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-solr-core >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-solr-core ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-solr-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-solr-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-solr-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-solr-core ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-solr-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-solr-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-solr-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-solr-core <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-solr-core ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 18
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-solr-core ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-solr-core ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-solr-core <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-solr-core ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Solr OSGi 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-solr-osgi >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-solr-osgi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-solr-osgi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-solr-osgi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-solr-osgi/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-solr-osgi ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-solr-osgi ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-solr-osgi ---
+[WARNING] Manifest org.apache.jackrabbit:oak-solr-osgi:bundle:1.8-SNAPSHOT : NoClassDefFoundError: com/vividsolutions/jts/io/InStream
+[WARNING] Manifest org.apache.jackrabbit:oak-solr-osgi:bundle:1.8-SNAPSHOT : NoClassDefFoundError: com/vividsolutions/jts/io/OutStream
+[WARNING] Manifest org.apache.jackrabbit:oak-solr-osgi:bundle:1.8-SNAPSHOT : NoClassDefFoundError: com/vividsolutions/jts/geom/CoordinateSequenceFilter
+[WARNING] Manifest org.apache.jackrabbit:oak-solr-osgi:bundle:1.8-SNAPSHOT : NoClassDefFoundError: com/vividsolutions/jts/geom/GeometryFilter
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-solr-osgi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-solr-osgi/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-solr-osgi ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-solr-osgi ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-solr-osgi >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-solr-osgi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-solr-osgi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-solr-osgi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-solr-osgi/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-solr-osgi ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-solr-osgi ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-solr-osgi ---
+[WARNING] Manifest org.apache.jackrabbit:oak-solr-osgi:bundle:1.8-SNAPSHOT : NoClassDefFoundError: com/vividsolutions/jts/io/InStream
+[WARNING] Manifest org.apache.jackrabbit:oak-solr-osgi:bundle:1.8-SNAPSHOT : NoClassDefFoundError: com/vividsolutions/jts/io/OutStream
+[WARNING] Manifest org.apache.jackrabbit:oak-solr-osgi:bundle:1.8-SNAPSHOT : NoClassDefFoundError: com/vividsolutions/jts/geom/CoordinateSequenceFilter
+[WARNING] Manifest org.apache.jackrabbit:oak-solr-osgi:bundle:1.8-SNAPSHOT : NoClassDefFoundError: com/vividsolutions/jts/geom/GeometryFilter
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-solr-osgi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-solr-osgi/src/test/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-solr-osgi ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-solr-osgi <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-solr-osgi ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 0
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-solr-osgi ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-solr-osgi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-solr-osgi <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-solr-osgi ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Search Machine Translation 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-search-mt >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-search-mt ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-search-mt ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-search-mt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-search-mt/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-search-mt ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-search-mt ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-search-mt ---
+[WARNING] Manifest org.apache.jackrabbit:oak-search-mt:bundle:1.8-SNAPSHOT : NoClassDefFoundError: edu/uci/ics/jung/graph/DirectedOrderedSparseMultigraph
+[WARNING] Manifest org.apache.jackrabbit:oak-search-mt:bundle:1.8-SNAPSHOT : NoClassDefFoundError: org/apache/commons/collections15/Transformer
+[WARNING] Manifest org.apache.jackrabbit:oak-search-mt:bundle:1.8-SNAPSHOT : NoClassDefFoundError: edu/uci/ics/jung/visualization/VisualizationViewer
+[WARNING] Manifest org.apache.jackrabbit:oak-search-mt:bundle:1.8-SNAPSHOT : Unused Import-Package instructions: [com.ibm.uvm.tools.*, com.sun.jdmk.comm.*, javax.jms.*, javax.jmdns.*, junit.framework.*, org.apache.tools.ant.*, org.apache.tools.ant.types.*, org.easymock.*, org.jmock.core.*] 
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-search-mt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-search-mt/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-search-mt ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-search-mt ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-search-mt >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-search-mt ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-search-mt ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-search-mt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-search-mt/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-search-mt ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-search-mt ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-search-mt ---
+[WARNING] Manifest org.apache.jackrabbit:oak-search-mt:bundle:1.8-SNAPSHOT : NoClassDefFoundError: edu/uci/ics/jung/graph/DirectedOrderedSparseMultigraph
+[WARNING] Manifest org.apache.jackrabbit:oak-search-mt:bundle:1.8-SNAPSHOT : NoClassDefFoundError: org/apache/commons/collections15/Transformer
+[WARNING] Manifest org.apache.jackrabbit:oak-search-mt:bundle:1.8-SNAPSHOT : NoClassDefFoundError: edu/uci/ics/jung/visualization/VisualizationViewer
+[WARNING] Manifest org.apache.jackrabbit:oak-search-mt:bundle:1.8-SNAPSHOT : Unused Import-Package instructions: [com.ibm.uvm.tools.*, com.sun.jdmk.comm.*, javax.jms.*, javax.jmdns.*, junit.framework.*, org.apache.tools.ant.*, org.apache.tools.ant.types.*, org.easymock.*, org.jmock.core.*] 
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-search-mt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-search-mt/src/test/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-search-mt ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-search-mt <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-search-mt ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 1
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-search-mt ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-search-mt ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-search-mt <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-search-mt ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak External Authentication Support 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-auth-external >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-auth-external ---
+[INFO] test.opts.coverage set to -javaagent:/home/kwang62/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/home/kwang62/jackrabbit-oak/oak-auth-external/target/coverage-reports/jacoco-ut.exec
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-auth-external ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-auth-external ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-auth-external/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-auth-external ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-auth-external ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-auth-external ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-auth-external ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-auth-external ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-auth-external ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-auth-external >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-auth-external ---
+[INFO] test.opts.coverage set to -javaagent:/home/kwang62/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/home/kwang62/jackrabbit-oak/oak-auth-external/target/coverage-reports/jacoco-ut.exec
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-auth-external ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-auth-external ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-auth-external/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-auth-external ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-auth-external ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-auth-external ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-auth-external ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-auth-external ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-auth-external <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-auth-external ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 36
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-auth-external ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-auth-external ---
+[INFO] Loading execution data file /home/kwang62/jackrabbit-oak/oak-auth-external/target/coverage-reports/jacoco-ut.exec
+[INFO] Analyzed bundle 'Oak External Authentication Support' with 41 classes
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-auth-external <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-auth-external ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak LDAP Authentication Support 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-auth-ldap >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-auth-ldap ---
+[INFO] test.opts.coverage set to -javaagent:/home/kwang62/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/home/kwang62/jackrabbit-oak/oak-auth-ldap/target/coverage-reports/jacoco-ut.exec
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-auth-ldap ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-auth-ldap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-auth-ldap/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-auth-ldap ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-auth-ldap ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-auth-ldap ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-auth-ldap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-auth-ldap ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-auth-ldap ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-auth-ldap >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-auth-ldap ---
+[INFO] test.opts.coverage set to -javaagent:/home/kwang62/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/home/kwang62/jackrabbit-oak/oak-auth-ldap/target/coverage-reports/jacoco-ut.exec
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-auth-ldap ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-auth-ldap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-auth-ldap/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-auth-ldap ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-auth-ldap ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-auth-ldap ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-auth-ldap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-auth-ldap ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-auth-ldap <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-auth-ldap ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 7
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-auth-ldap ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-auth-ldap ---
+[INFO] Loading execution data file /home/kwang62/jackrabbit-oak/oak-auth-ldap/target/coverage-reports/jacoco-ut.exec
+[INFO] Analyzed bundle 'Oak LDAP Authentication Support' with 16 classes
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-auth-ldap <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-auth-ldap ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Commons for Runnable modules 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-run-commons >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-run-commons ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-run-commons ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-run-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-run-commons/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-run-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-run-commons ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-run-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-run-commons/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-run-commons ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-run-commons ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-run-commons >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-run-commons ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-run-commons ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-run-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-run-commons/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-run-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-run-commons ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-run-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-run-commons/src/test/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-run-commons ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-run-commons <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-run-commons ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 0
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-run-commons ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-run-commons ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-run-commons <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-run-commons ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Remote API 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-remote >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-remote ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-remote ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-remote ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-remote/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-remote ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-remote ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-remote ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-remote ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 25 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-remote ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-remote ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-remote >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-remote ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-remote ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-remote ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-remote/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-remote ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-remote ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-remote ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-remote ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 25 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-remote ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-remote <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-remote ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 17
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-remote ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-remote ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-remote <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-remote ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Runnable Jar 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-run >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-run ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:addSources (default) @ oak-run ---
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:addTestSources (default) @ oak-run ---
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:generateStubs (default) @ oak-run ---
+[INFO] Using Groovy 2.4.7 to perform generateStubs.
+[INFO] Generated 13 stubs.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-run ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-run ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 12 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-run ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-run ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:compile (default) @ oak-run ---
+[INFO] Using Groovy 2.4.7 to perform compile.
+[INFO] Compiled 28 files.
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:removeStubs (default) @ oak-run ---
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:testGenerateStubs (default) @ oak-run ---
+[INFO] No sources specified for stub generation.  Skipping.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-run ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-run ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:testCompile (default) @ oak-run ---
+[INFO] No sources specified for compilation.  Skipping.
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:removeTestStubs (default) @ oak-run ---
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-run ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-run >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-run ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:addSources (default) @ oak-run ---
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:addTestSources (default) @ oak-run ---
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:generateStubs (default) @ oak-run ---
+[INFO] Using Groovy 2.4.7 to perform generateStubs.
+[INFO] Generated 13 stubs.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-run ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-run ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 12 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-run ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-run ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:compile (default) @ oak-run ---
+[INFO] Using Groovy 2.4.7 to perform compile.
+[INFO] Compiled 28 files.
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:removeStubs (default) @ oak-run ---
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:testGenerateStubs (default) @ oak-run ---
+[INFO] No sources specified for stub generation.  Skipping.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-run ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-run ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:testCompile (default) @ oak-run ---
+[INFO] No sources specified for compilation.  Skipping.
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:removeTestStubs (default) @ oak-run ---
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-run <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-run ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 18
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-run ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-run ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-run <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-run ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Integration Tests for OSGi deployments 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-it-osgi >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-it-osgi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-it-osgi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-it-osgi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-it-osgi/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-it-osgi ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-it-osgi ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-it-osgi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-it-osgi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-it-osgi ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-it-osgi >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-it-osgi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-it-osgi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-it-osgi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-it-osgi/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-it-osgi ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-it-osgi ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-it-osgi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-it-osgi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-it-osgi <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-it-osgi ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 0
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-it-osgi ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-it-osgi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-it-osgi <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-it-osgi ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak PojoSR 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-pojosr >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-pojosr ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:addSources (default) @ oak-pojosr ---
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:addTestSources (default) @ oak-pojosr ---
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:generateStubs (default) @ oak-pojosr ---
+[INFO] No sources specified for stub generation.  Skipping.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-pojosr ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-pojosr ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-pojosr ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-pojosr ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:compile (default) @ oak-pojosr ---
+[INFO] No sources specified for compilation.  Skipping.
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:removeStubs (default) @ oak-pojosr ---
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:testGenerateStubs (default) @ oak-pojosr ---
+[INFO] Using Groovy 2.4.12 to perform testGenerateStubs.
+[INFO] Generated 0 stubs.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-pojosr ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-pojosr ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:testCompile (default) @ oak-pojosr ---
+[INFO] Using Groovy 2.4.12 to perform testCompile.
+[INFO] Compiled 52 files.
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:removeTestStubs (default) @ oak-pojosr ---
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-pojosr ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-pojosr >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-pojosr ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:addSources (default) @ oak-pojosr ---
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:addTestSources (default) @ oak-pojosr ---
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:generateStubs (default) @ oak-pojosr ---
+[INFO] No sources specified for stub generation.  Skipping.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-pojosr ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-pojosr ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-pojosr ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-pojosr ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:compile (default) @ oak-pojosr ---
+[INFO] No sources specified for compilation.  Skipping.
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:removeStubs (default) @ oak-pojosr ---
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:testGenerateStubs (default) @ oak-pojosr ---
+[INFO] Using Groovy 2.4.12 to perform testGenerateStubs.
+[INFO] Generated 0 stubs.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-pojosr ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-pojosr ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:testCompile (default) @ oak-pojosr ---
+[INFO] Using Groovy 2.4.12 to perform testCompile.
+[INFO] Compiled 52 files.
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:removeTestStubs (default) @ oak-pojosr ---
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-pojosr <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-pojosr ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 19
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-pojosr ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-pojosr ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-pojosr <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-pojosr ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak CUG Authorization 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-authorization-cug >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-authorization-cug ---
+[INFO] test.opts.coverage set to -javaagent:/home/kwang62/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/home/kwang62/jackrabbit-oak/oak-authorization-cug/target/coverage-reports/jacoco-ut.exec
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-authorization-cug ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-authorization-cug ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-authorization-cug ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-authorization-cug ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-authorization-cug ---
+[WARNING] Manifest org.apache.jackrabbit:oak-authorization-cug:bundle:1.8-SNAPSHOT : aQute.bnd.annotation.ProviderType annotation used in class org.apache.jackrabbit.api.security.JackrabbitAccessControlPolicy. Bnd versioning annotations are deprecated as of Bnd 3.2 and support will be removed in Bnd 4.0. Please change to use OSGi versioning annotations.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-authorization-cug ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-authorization-cug/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-authorization-cug ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-authorization-cug ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-authorization-cug >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-authorization-cug ---
+[INFO] test.opts.coverage set to -javaagent:/home/kwang62/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/home/kwang62/jackrabbit-oak/oak-authorization-cug/target/coverage-reports/jacoco-ut.exec
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-authorization-cug ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-authorization-cug ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-authorization-cug ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-authorization-cug ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-authorization-cug ---
+[WARNING] Manifest org.apache.jackrabbit:oak-authorization-cug:bundle:1.8-SNAPSHOT : aQute.bnd.annotation.ProviderType annotation used in class org.apache.jackrabbit.api.security.JackrabbitAccessControlPolicy. Bnd versioning annotations are deprecated as of Bnd 3.2 and support will be removed in Bnd 4.0. Please change to use OSGi versioning annotations.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-authorization-cug ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-authorization-cug/src/test/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-authorization-cug ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-authorization-cug <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-authorization-cug ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 27
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-authorization-cug ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-authorization-cug ---
+[INFO] Loading execution data file /home/kwang62/jackrabbit-oak/oak-authorization-cug/target/coverage-reports/jacoco-ut.exec
+[INFO] Analyzed bundle 'Oak CUG Authorization' with 20 classes
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-authorization-cug <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-authorization-cug ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Exercises 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-exercise >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-exercise ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-exercise ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-exercise ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-exercise/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-exercise ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-exercise ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-exercise ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-exercise ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-exercise/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-exercise ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-exercise ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-exercise >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-exercise ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-exercise ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-exercise ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-exercise/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-exercise ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-exercise ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.3.0:manifest (scr-metadata) @ oak-exercise ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-exercise ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-exercise/src/test/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-exercise ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-exercise <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-exercise ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 61
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-exercise ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-exercise ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-exercise <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-exercise ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Web Application Example 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-webapp >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-webapp ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-webapp ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:reserve-network-port (reserve-network-port) @ oak-webapp ---
+[INFO] Reserved port 35824 for tomcat.http.port
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-webapp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-webapp ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-webapp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-webapp ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-webapp >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-webapp ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-webapp ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:reserve-network-port (reserve-network-port) @ oak-webapp ---
+[INFO] Reserved port 44146 for tomcat.http.port
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-webapp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-webapp ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-webapp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-webapp <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-webapp ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 0
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-webapp ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-webapp ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-webapp <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-webapp ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Standalone Example 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-standalone >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-standalone ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-standalone ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-standalone ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-standalone ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-standalone ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-standalone ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-standalone ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-standalone ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-standalone >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-standalone ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-standalone ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-standalone ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-standalone ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-standalone ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-standalone ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-standalone ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-standalone <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-standalone ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 1
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-standalone ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-standalone ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-standalone <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-standalone ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Examples 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-examples >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-examples ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-examples ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-examples ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-examples ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-examples >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-examples ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-examples ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-examples ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-examples <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-examples ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Benchmarks Runner 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-benchmarks >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-benchmarks ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-benchmarks ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-benchmarks ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-benchmarks ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-benchmarks ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-benchmarks ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-benchmarks/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-benchmarks ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-benchmarks ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-benchmarks >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-benchmarks ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-benchmarks ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ oak-benchmarks ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ oak-benchmarks ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-benchmarks ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ oak-benchmarks ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/kwang62/jackrabbit-oak/oak-benchmarks/src/test/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ oak-benchmarks ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-benchmarks <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ oak-benchmarks ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 0
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ oak-benchmarks ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-benchmarks ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-benchmarks <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ oak-benchmarks ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jackrabbit Oak 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ jackrabbit-oak >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ jackrabbit-oak ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ jackrabbit-oak ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ jackrabbit-oak ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ jackrabbit-oak ---
+[INFO] 
+[INFO] >>> starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ jackrabbit-oak >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ jackrabbit-oak ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ jackrabbit-oak ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ jackrabbit-oak ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ jackrabbit-oak <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) @ jackrabbit-oak ---
+INFO: STARTS:AffectedTests: 0
+INFO: STARTS:TotalTests: 0
+INFO: ********** Run **********
+INFO: No tests are selected to run.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ jackrabbit-oak ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ jackrabbit-oak <<<
+[INFO] 
+[INFO] --- starts-maven-plugin:1.4-SNAPSHOT:starts (default-cli) @ jackrabbit-oak ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Oak Parent POM .................................... FAILURE [3.054s]
+[INFO] Oak Commons ....................................... SUCCESS [5.138s]
+[INFO] Oak API ........................................... SUCCESS [3.319s]
+[INFO] Oak Core SPI ...................................... SUCCESS [3.834s]
+[INFO] Oak NodeStore and Commit SPI ...................... SUCCESS [3.359s]
+[INFO] Oak Query SPI ..................................... SUCCESS [2.210s]
+[INFO] Oak Security SPI .................................. SUCCESS [4.203s]
+[INFO] Oak Blob Store .................................... SUCCESS [2.799s]
+[INFO] Oak Blob Plugins .................................. SUCCESS [3.786s]
+[INFO] Oak Core .......................................... SUCCESS [21.484s]
+[INFO] Oak Composite Store ............................... SUCCESS [3.356s]
+[INFO] Oak DocumentNodeStore ............................. SUCCESS [15.121s]
+[INFO] Oak Cloud Blob Store .............................. SUCCESS [3.846s]
+[INFO] Oak Azure Cloud Blob Store ........................ SUCCESS [4.445s]
+[INFO] Oak Segment Tar ................................... SUCCESS [9.520s]
+[INFO] Oak Integration Tests ............................. SUCCESS [5.359s]
+[INFO] Oak JCR Binding ................................... SUCCESS [12.367s]
+[INFO] Oak upgrade ....................................... SUCCESS [15.596s]
+[INFO] Oak HTTP Binding .................................. SUCCESS [3.088s]
+[INFO] Oak Lucene ........................................ SUCCESS [27.157s]
+[INFO] Oak Solr core ..................................... SUCCESS [9.124s]
+[INFO] Oak Solr OSGi ..................................... SUCCESS [37.672s]
+[INFO] Oak Search Machine Translation .................... SUCCESS [15.645s]
+[INFO] Oak External Authentication Support ............... SUCCESS [4.913s]
+[INFO] Oak LDAP Authentication Support ................... SUCCESS [13.045s]
+[INFO] Oak Commons for Runnable modules .................. SUCCESS [3.925s]
+[INFO] Oak Remote API .................................... SUCCESS [5.759s]
+[INFO] Oak Runnable Jar .................................. SUCCESS [18.738s]
+[INFO] Oak Integration Tests for OSGi deployments ........ SUCCESS [2.657s]
+[INFO] Oak PojoSR ........................................ SUCCESS [17.028s]
+[INFO] Oak CUG Authorization ............................. SUCCESS [3.766s]
+[INFO] Oak Exercises ..................................... SUCCESS [3.109s]
+[INFO] Oak Web Application Example ....................... SUCCESS [7.504s]
+[INFO] Oak Standalone Example ............................ SUCCESS [10.467s]
+[INFO] Oak Examples ...................................... FAILURE [1.138s]
+[INFO] Oak Benchmarks Runner ............................. SUCCESS [6.037s]
+[INFO] Jackrabbit Oak .................................... SUCCESS [1.606s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5:16.543s
+[INFO] Finished at: Sat Nov 11 15:25:35 CST 2017
+[INFO] Final Memory: 177M/412M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal edu.illinois:starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) on project oak-parent: Surefire plugin not available -> [Help 1]
+[ERROR] Failed to execute goal edu.illinois:starts-maven-plugin:1.4-SNAPSHOT:run (default-cli) on project oak-examples: Surefire plugin not available -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Build failures were ignored.

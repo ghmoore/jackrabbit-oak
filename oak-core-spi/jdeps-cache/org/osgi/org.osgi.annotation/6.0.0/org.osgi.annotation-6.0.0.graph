@@ -1,0 +1,17 @@
+org.osgi.annotation.versioning.Version java.lang.annotation.Annotation
+org.osgi.annotation.versioning.Version java.lang.Object
+org.osgi.annotation.versioning.Version java.lang.annotation.Documented
+org.osgi.annotation.versioning.Version java.lang.annotation.Target
+org.osgi.annotation.versioning.Version java.lang.String
+org.osgi.annotation.versioning.Version java.lang.annotation.Retention
+org.osgi.annotation.versioning.ProviderType java.lang.annotation.Annotation
+org.osgi.annotation.versioning.ProviderType java.lang.Object
+org.osgi.annotation.versioning.ProviderType java.lang.annotation.Documented
+org.osgi.annotation.versioning.ProviderType java.lang.annotation.Target
+org.osgi.annotation.versioning.ProviderType java.lang.annotation.Retention
+org.osgi.annotation.versioning.ConsumerType java.lang.annotation.Annotation
+org.osgi.annotation.versioning.ConsumerType java.lang.Object
+org.osgi.annotation.versioning.ConsumerType java.lang.annotation.Documented
+org.osgi.annotation.versioning.ConsumerType java.lang.annotation.Target
+org.osgi.annotation.versioning.ConsumerType java.lang.annotation.Retention
+org.osgi.annotation.versioning.package-info java.lang.Object

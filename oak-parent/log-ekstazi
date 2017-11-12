@@ -1,0 +1,42 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.jackrabbit:oak-parent:pom:1.8-SNAPSHOT
+[WARNING] 'reporting.plugins.plugin.version' for org.apache.maven.plugins:maven-project-info-reports-plugin is missing. @ line 507, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Oak Parent POM 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> ekstazi-maven-plugin:4.6.0:ekstazi (default-cli) @ oak-parent >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (pre-unit-test) @ oak-parent ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] test.opts.coverage set to empty
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ oak-parent ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (animal-sniffer) @ oak-parent ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (ekstazi) @ oak-parent ---
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:select (default-cli) @ oak-parent ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (post-unit-test) @ oak-parent ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< ekstazi-maven-plugin:4.6.0:ekstazi (default-cli) @ oak-parent <<<
+[INFO] 
+[INFO] --- ekstazi-maven-plugin:4.6.0:ekstazi (default-cli) @ oak-parent ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.520s
+[INFO] Finished at: Sat Nov 11 13:35:39 CST 2017
+[INFO] Final Memory: 13M/175M
+[INFO] ------------------------------------------------------------------------

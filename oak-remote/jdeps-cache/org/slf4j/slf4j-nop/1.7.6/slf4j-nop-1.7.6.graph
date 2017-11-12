@@ -1,0 +1,17 @@
+org.slf4j.impl.StaticLoggerBinder org.slf4j.spi.LoggerFactoryBinder
+org.slf4j.impl.StaticLoggerBinder java.lang.Class
+org.slf4j.impl.StaticLoggerBinder java.lang.Object
+org.slf4j.impl.StaticLoggerBinder org.slf4j.helpers.NOPLoggerFactory
+org.slf4j.impl.StaticLoggerBinder java.lang.String
+org.slf4j.impl.StaticLoggerBinder org.slf4j.ILoggerFactory
+org.slf4j.impl.StaticMDCBinder org.slf4j.helpers.NOPMDCAdapter
+org.slf4j.impl.StaticMDCBinder java.lang.Class
+org.slf4j.impl.StaticMDCBinder java.lang.Object
+org.slf4j.impl.StaticMDCBinder java.lang.String
+org.slf4j.impl.StaticMDCBinder org.slf4j.spi.MDCAdapter
+org.slf4j.impl.StaticMarkerBinder org.slf4j.helpers.BasicMarkerFactory
+org.slf4j.impl.StaticMarkerBinder java.lang.Class
+org.slf4j.impl.StaticMarkerBinder java.lang.Object
+org.slf4j.impl.StaticMarkerBinder java.lang.String
+org.slf4j.impl.StaticMarkerBinder org.slf4j.IMarkerFactory
+org.slf4j.impl.StaticMarkerBinder org.slf4j.spi.MarkerFactoryBinder

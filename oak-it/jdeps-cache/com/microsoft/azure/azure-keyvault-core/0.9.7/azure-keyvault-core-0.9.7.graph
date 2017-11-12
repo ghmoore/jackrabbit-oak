@@ -1,0 +1,12 @@
+com.microsoft.azure.keyvault.core.IKey java.util.concurrent.Future
+com.microsoft.azure.keyvault.core.IKey org.apache.commons.lang3.tuple.Pair
+com.microsoft.azure.keyvault.core.IKey java.io.Closeable
+com.microsoft.azure.keyvault.core.IKey java.security.NoSuchAlgorithmException
+com.microsoft.azure.keyvault.core.IKey java.lang.Boolean
+com.microsoft.azure.keyvault.core.IKey java.lang.Object
+com.microsoft.azure.keyvault.core.IKey java.lang.String
+com.microsoft.azure.keyvault.core.IKey org.apache.commons.lang3.tuple.Triple
+com.microsoft.azure.keyvault.core.IKeyResolver java.util.concurrent.Future
+com.microsoft.azure.keyvault.core.IKeyResolver com.microsoft.azure.keyvault.core.IKey
+com.microsoft.azure.keyvault.core.IKeyResolver java.lang.Object
+com.microsoft.azure.keyvault.core.IKeyResolver java.lang.String

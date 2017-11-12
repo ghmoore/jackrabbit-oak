@@ -1,0 +1,10 @@
+org.apache.directory.server.i18n.I18n java.lang.Enum
+org.apache.directory.server.i18n.I18n java.util.ResourceBundle
+org.apache.directory.server.i18n.I18n java.lang.StringBuffer
+org.apache.directory.server.i18n.I18n java.util.MissingResourceException
+org.apache.directory.server.i18n.I18n java.lang.Class
+org.apache.directory.server.i18n.I18n java.lang.Object
+org.apache.directory.server.i18n.I18n java.lang.StringBuilder
+org.apache.directory.server.i18n.I18n java.lang.String
+org.apache.directory.server.i18n.I18n java.lang.Exception
+org.apache.directory.server.i18n.I18n java.text.MessageFormat

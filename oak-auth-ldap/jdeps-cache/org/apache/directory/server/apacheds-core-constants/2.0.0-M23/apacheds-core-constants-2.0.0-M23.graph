@@ -1,0 +1,8 @@
+org.apache.directory.server.constants.CoreSchemaConstants java.lang.Object
+org.apache.directory.server.constants.CoreSchemaConstants java.lang.String
+org.apache.directory.server.constants.ApacheSchemaConstants java.lang.Object
+org.apache.directory.server.constants.ApacheSchemaConstants java.lang.String
+org.apache.directory.server.constants.ServerDNConstants java.lang.Object
+org.apache.directory.server.constants.ServerDNConstants java.lang.String
+org.apache.directory.server.constants.SystemSchemaConstants java.lang.Object
+org.apache.directory.server.constants.SystemSchemaConstants java.lang.String
